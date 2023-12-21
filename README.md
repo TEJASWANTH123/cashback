@@ -21,8 +21,8 @@ This project is a simplified clone of Google Pay, implemented in Node.js with Ex
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/google-pay-clone.git
-    cd google-pay-clone
+    git clone https://github.com/TEJASWANTH123/cashback.git
+    cd cashback
     ```
 
 2. Install dependencies:
@@ -31,7 +31,7 @@ This project is a simplified clone of Google Pay, implemented in Node.js with Ex
     npm install
     ```
 
-3. Set up your MongoDB connection by updating the `dbURI` in `app.js` with your MongoDB connection string.
+3. Set up your MongoDB connection by updating the `dbURI` in `index.js` with your MongoDB connection string.
 
 4. Start the server:
 
