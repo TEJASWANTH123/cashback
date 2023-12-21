@@ -17,7 +17,19 @@ This project is a simplified clone of Google Pay, implemented in Node.js with Ex
 - Cashback on transactions
 - Transaction history for users
 
+## Installation
+1. Clone the repository:
 
+    ```bash
+    git clone https://github.com/your-username/google-pay-clone.git
+    cd google-pay-clone
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    ```
 
 3. Set up your MongoDB connection by updating the `dbURI` in `app.js` with your MongoDB connection string.
 
@@ -53,7 +65,7 @@ Assuming your server is running at `http://localhost:3000`:
 # Login
 curl -X POST -H "Content-Type: application/json" -d '{"phoneNum": "9876543210"}' http://localhost:3000/users/login
 
-# Add Amount 
+# Add Amount (protected with JWT)
 curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <your_token>" -d '{"phoneNum": "9876543210", "initialAmount": 100}' http://localhost:3000/users/add-amount
 
 # Transfer
