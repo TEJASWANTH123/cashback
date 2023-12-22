@@ -1,1 +1,2 @@
-curl http://localhost:3000/transactions/9876543210
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZU51bSI6IjU3NzY1NDMyMTAiLCJpYXQiOjE3MDMyMjI2NTAsImV4cCI6MTcwMzIyNjI1MH0.8xgKkE-oguTFBE4K3l8l5at_kp7AA1hyYykIwmR0608" -d '{"phoneNum": "5776543210", "initialAmount": 50}' http://localhost:3000/users/add-amount
+

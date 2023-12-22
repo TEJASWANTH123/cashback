@@ -11,7 +11,8 @@ const userSchema = new mongoose.Schema({
       amount: Number,
       cashback: Number
     }
-  ]
+  ],
+   tokens: [{ type: String }]
 });
 
 const User = mongoose.model('User', userSchema);
