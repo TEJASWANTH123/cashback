@@ -1,4 +1,5 @@
-// app.js
+
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -6,11 +7,13 @@ const userRoutes = require('./routes/userRoutes');
 const transactionRoutes = require('./routes/transactionRoutes');
 const app = express();
 const port = 3000;
-require('dotenv').config();
+
+
+
 
 // Connect to MongoDB
-const dbURI = process.env.DB_URI;
-
+const dbURI = process.env.dbURI;
+console.log('dbURI:', process.env.dbURI);
 mongoose.connect(dbURI, {
  
 }).then(() => {
