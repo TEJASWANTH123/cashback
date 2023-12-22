@@ -6,9 +6,10 @@ const userRoutes = require('./routes/userRoutes');
 const transactionRoutes = require('./routes/transactionRoutes');
 const app = express();
 const port = 3000;
+require('dotenv').config();
 
 // Connect to MongoDB
-const dbURI = 'mongodb+srv://tejaswantht20:abcd@cluster1.qgzcodv.mongodb.net/test';
+const dbURI = process.env.DB_URI;
 
 mongoose.connect(dbURI, {
  
